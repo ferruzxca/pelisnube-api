@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PelisNubeMobile.Pages.DetailPage"
+             Title="Detalle"
+             BackgroundColor="#090B1A">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Image x:Name="BannerImage" HeightRequest="210" Aspect="AspectFill" />
+            <Label x:Name="TitleLabel" FontSize="26" FontAttributes="Bold" TextColor="White" />
+            <Label x:Name="MetaLabel" FontSize="13" TextColor="#A5B4FC" />
+            <Label x:Name="SynopsisLabel" FontSize="14" TextColor="#E5E7EB" />
+
+            <Label Text="Trailer" FontSize="20" FontAttributes="Bold" TextColor="White" Margin="0,6,0,0" />
+            <WebView x:Name="TrailerWebView" HeightRequest="250" />
+
+            <Button x:Name="OpenTrailerButton"
+                    Text="Abrir trailer en navegador"
+                    Clicked="OnOpenTrailerClicked"
+                    BackgroundColor="#EC4899"
+                    TextColor="White"
+                    CornerRadius="12" />
+
+            <Label x:Name="ErrorLabel" TextColor="#FCA5A5" FontSize="12" />
+            <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="#EC4899" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

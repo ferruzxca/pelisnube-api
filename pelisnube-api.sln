@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maui-mobile", "maui-mobile", "{0439A429-49F0-B56E-94DB-3795DF8D9DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PelisNubeMobile", "maui-mobile\PelisNubeMobile\PelisNubeMobile.csproj", "{15C784B6-31DF-0E30-2B90-28E93A49E67B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15C784B6-31DF-0E30-2B90-28E93A49E67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C784B6-31DF-0E30-2B90-28E93A49E67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C784B6-31DF-0E30-2B90-28E93A49E67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C784B6-31DF-0E30-2B90-28E93A49E67B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15C784B6-31DF-0E30-2B90-28E93A49E67B} = {0439A429-49F0-B56E-94DB-3795DF8D9DCC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9CC6C49-1C43-4D39-B009-B96BF7C14B1E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Keep admin panels outside API front controller.
+RewriteRule ^admin(/.*)?$ - [L]
+RewriteRule ^php-admin(/.*)?$ - [L]
+
+# Block direct access to internal app directories/files.
+RewriteRule ^(src|database|scripts|storage)/ - [F,L]
+RewriteRule ^bootstrap\.php$ - [F,L]
+RewriteRule ^(\.env|\.env\.example|README\.md)$ - [F,L]
+RewriteRule ^\. - [F,L]
+
+# Front controller.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

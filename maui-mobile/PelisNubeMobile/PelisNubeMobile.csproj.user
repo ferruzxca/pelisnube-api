@@ -1,0 +1,14 @@
+<Project>
+	<PropertyGroup Condition="'$(UnoForceSingleTFM)'=='true'">
+		<TargetFramework>net10.0-android</TargetFramework>
+		<Configuration>Debug</Configuration>
+	</PropertyGroup>
+	<PropertyGroup>
+		<UnoPlatformIDE>vscode</UnoPlatformIDE>
+		<UnoPlatformIDEVersion>1.109.4</UnoPlatformIDEVersion>
+		<UnoPlatformExtension>unoplatform.vscode 0.24.1</UnoPlatformExtension>
+		<UnoRemoteControlPort>0</UnoRemoteControlPort>
+		<UnoVSCodeCSharpExtension>ms-dotnettools.csharp 2.120.3</UnoVSCodeCSharpExtension>
+		<UnoVSCodeCSharpDevKitExtension>ms-dotnettools.csdevkit 2.10.3</UnoVSCodeCSharpDevKitExtension>
+	</PropertyGroup>
+</Project>

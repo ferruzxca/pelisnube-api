@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PelisNubeMobile.Pages.SignupPage"
+             Title="Signup"
+             BackgroundColor="#111827">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="10">
+            <Label Text="Crear cuenta" FontSize="28" FontAttributes="Bold" TextColor="#F9FAFB" />
+            <Label Text="Registro con pago simulado (par = éxito, impar = fallo)" TextColor="#A5B4FC" FontSize="12" />
+
+            <Entry x:Name="NameEntry" Placeholder="Nombre" TextColor="White" PlaceholderColor="#9CA3AF" />
+            <Entry x:Name="EmailEntry" Placeholder="Correo" Keyboard="Email" TextColor="White" PlaceholderColor="#9CA3AF" />
+            <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="#9CA3AF" />
+
+            <Picker x:Name="PlanPicker" Title="Plan" TextColor="White" />
+
+            <Entry x:Name="CardNumberEntry" Placeholder="Tarjeta (ej: 4242)" Keyboard="Numeric" TextColor="White" PlaceholderColor="#9CA3AF" />
+            <Entry x:Name="CardBrandEntry" Placeholder="Marca (SIMULATED)" Text="SIMULATED" TextColor="White" PlaceholderColor="#9CA3AF" />
+
+            <Button x:Name="SignupButton" Text="Crear cuenta" Clicked="OnSignupClicked" BackgroundColor="#7C3AED" TextColor="White" CornerRadius="12" />
+            <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="#EC4899" />
+            <Label x:Name="ResultLabel" TextColor="#FDBA74" FontSize="13" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

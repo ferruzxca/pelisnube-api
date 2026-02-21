@@ -1,0 +1,8 @@
+<api type="release" assembly-name="PelisNubeMobile" mvid="2d8cae31e9294088afaf1002d160816e">
+  <module assembly-name="PelisNubeMobile" mvid="2d8cae31e9294088afaf1002d160816e" mvid-bytes="Ma6MLSnpiECvrxAC0WCBbg==">
+    <types-scratch>
+      <entry key="crc648b237cbe2622dc06/MainActivity" java-name="crc648b237cbe2622dc06/MainActivity" managed-type-name="PelisNubeMobile.MainActivity" token="33554445" />
+      <entry key="crc648b237cbe2622dc06/MainApplication" java-name="crc648b237cbe2622dc06/MainApplication" managed-type-name="PelisNubeMobile.MainApplication" token="33554446" />
+    </types-scratch>
+  </module>
+</api>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PelisNubeMobile.Pages.LoginPage"
+             Title="Ferruzca Play"
+             BackgroundColor="#0F1226">
+    <ScrollView>
+        <VerticalStackLayout Padding="24,36" Spacing="14">
+            <Label Text="Ferruzca Play"
+                   FontSize="34"
+                   FontAttributes="Bold"
+                   TextColor="#F7F4FF" />
+            <Label Text="Inicia sesión para ver tu catálogo, trailers y perfil"
+                   TextColor="#B2B7DB"
+                   FontSize="14" />
+
+            <Border Stroke="#2B2F4D" StrokeThickness="1" BackgroundColor="#171B38" StrokeShape="RoundRectangle 16" Padding="14" Margin="0,18,0,0">
+                <VerticalStackLayout Spacing="12">
+                    <Entry x:Name="EmailEntry"
+                           Placeholder="Correo"
+                           TextColor="#FFFFFF"
+                           PlaceholderColor="#8C90B2"
+                           Keyboard="Email" />
+                    <Entry x:Name="PasswordEntry"
+                           Placeholder="Contraseña"
+                           IsPassword="True"
+                           TextColor="#FFFFFF"
+                           PlaceholderColor="#8C90B2" />
+
+                    <Button x:Name="LoginButton"
+                            Text="Entrar"
+                            Clicked="OnLoginClicked"
+                            CornerRadius="12"
+                            BackgroundColor="#6D28D9"
+                            TextColor="White"
+                            FontAttributes="Bold" />
+
+                    <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="#EC4899" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Crear cuenta (Signup)"
+                    Clicked="OnSignupClicked"
+                    BackgroundColor="#2563EB"
+                    TextColor="White"
+                    CornerRadius="12" />
+
+            <Button Text="Recuperar contraseña"
+                    Clicked="OnForgotClicked"
+                    BackgroundColor="#EC4899"
+                    TextColor="White"
+                    CornerRadius="12" />
+
+            <Label x:Name="InfoLabel"
+                   TextColor="#FFB4B4"
+                   FontSize="13" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

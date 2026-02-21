@@ -1,6 +1,4 @@
-node_modules
-dist
-coverage
-.env
-.DS_Store
-*.log
+php-api/.env
+php-admin/.env
+php-api/storage/logs/*.log
+*.DS_Store

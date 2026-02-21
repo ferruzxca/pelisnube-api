@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PelisNubeMobile.Pages.ProfilePage"
+             Title="Perfil"
+             BackgroundColor="#090B1A">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Perfil" FontSize="28" FontAttributes="Bold" TextColor="White" />
+
+            <Border Stroke="#2B2F4D" StrokeThickness="1" BackgroundColor="#141833" StrokeShape="RoundRectangle 16" Padding="14">
+                <VerticalStackLayout Spacing="6">
+                    <Label x:Name="NameLabel" TextColor="White" FontSize="22" FontAttributes="Bold" />
+                    <Label x:Name="EmailLabel" TextColor="#BFDBFE" />
+                    <Label x:Name="RoleStatusLabel" TextColor="#C4B5FD" />
+                    <Label x:Name="LangLabel" TextColor="#9CA3AF" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Stroke="#2B2F4D" StrokeThickness="1" BackgroundColor="#171B38" StrokeShape="RoundRectangle 16" Padding="14">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Suscripción" FontSize="18" FontAttributes="Bold" TextColor="White" />
+                    <Label x:Name="SubscriptionLabel" TextColor="#E5E7EB" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Actualizar" Clicked="OnRefreshClicked" BackgroundColor="#2563EB" TextColor="White" CornerRadius="12" />
+            <Button Text="Cerrar sesión" Clicked="OnLogoutClicked" BackgroundColor="#DC2626" TextColor="White" CornerRadius="12" />
+
+            <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="#EC4899" />
+            <Label x:Name="ErrorLabel" TextColor="#FCA5A5" FontSize="12" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

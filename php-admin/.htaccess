@@ -1,0 +1,7 @@
+RewriteEngine On
+DirectoryIndex index.php
+
+# Block internal files and folders.
+RewriteRule ^(src|storage)/ - [F,L]
+RewriteRule ^(\.env|\.env\.example|README\.md)$ - [F,L]
+RewriteRule ^\. - [F,L]

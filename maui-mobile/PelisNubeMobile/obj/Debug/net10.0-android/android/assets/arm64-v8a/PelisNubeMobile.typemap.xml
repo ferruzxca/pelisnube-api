@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="PelisNubeMobile" mvid="108a8faf78114aef914b521da8e02c9e">
+  <java-to-managed>
+    <entry java-name="crc648b237cbe2622dc06/MainActivity" managed-name="PelisNubeMobile.MainActivity, PelisNubeMobile" managed-type-token-id="33554445" />
+    <entry java-name="crc648b237cbe2622dc06/MainApplication" managed-name="PelisNubeMobile.MainApplication, PelisNubeMobile" managed-type-token-id="33554446" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc648b237cbe2622dc06/MainActivity" managed-name="PelisNubeMobile.MainActivity, PelisNubeMobile" managed-type-token-id="33554445" />
+    <entry java-name="crc648b237cbe2622dc06/MainApplication" managed-name="PelisNubeMobile.MainApplication, PelisNubeMobile" managed-type-token-id="33554446" />
+  </managed-to-java>
+</api>
